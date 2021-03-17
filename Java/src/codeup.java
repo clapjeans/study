@@ -14,7 +14,6 @@ public class codeup {
 		        System.out.println(y+" "+x);
 		       
 
-
 			}
 			
 		
