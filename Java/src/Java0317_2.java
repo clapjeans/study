@@ -18,7 +18,7 @@ public class Java0317_2 {
 		System.out.println(d);
 		
 		d='°¡';
-		e=(char)(d+1);
+		e=(char)(d+3);
 		System.out.println(d);
 		System.out.println(e);
 
