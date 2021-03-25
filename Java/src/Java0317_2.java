@@ -2,8 +2,7 @@
 public class Java0317_2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		char a, b, c, d, e;
 
 		a = 'A';

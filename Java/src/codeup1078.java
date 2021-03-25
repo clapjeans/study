@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class codeup1072 {
+public class codeup1078 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,8 +9,7 @@ public class codeup1072 {
 		
 		int a = sc.nextInt();
 		
-		for (int i = 1; i<=a;i++) {
-		
+		for (int i = 0; i<=a;i++) {
 			System.out.println( i );	
 		}
 	

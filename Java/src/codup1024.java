@@ -10,10 +10,10 @@ public class codup1024 {
 		        String a = sc.next();
 		        int len = a.length();
 		        for(int i =0;i<len;i++) {
-		            System.out.printf("\'%c\'\n", a.charAt(i));
+		            System.out.printf("%c \n", a.charAt(i));
 		        }
 		        
-		    
+		    System.out.println(" 아에이오우");
 
 	}
 
