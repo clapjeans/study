@@ -32,7 +32,7 @@ public class EmpController {
 		if(rList==null) {
 			rList = new ArrayList<>();
 		}
-		hjhhughg
+	
 		
 		for(EmpDTO eDTO : rList) {
 			log.info("ename:" +eDTO.getEname());
