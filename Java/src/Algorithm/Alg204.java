@@ -1,34 +1,31 @@
 package Algorithm;
 
-import java.util.Scanner;
-
 public class Alg204 {
 
-	
-	static int maxOf(int []a) {
-		int max = a[0];
-		
+	static void copy(int a[],int b []) {
 		for(int i=0;i<a.length;i++) {
-			if(a[i]>max)
-				a[i]=max;
+			a[i]=b[b.length-i-1]; //배열 a 값에 배열 b값을 대입  b값에 a열대입이아님
+			System.out.println(a[i]); //b를 역순으로 대입하는 방법 
 		}
-		
-		return max;
-		
+	
 	}
 	
+	
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
-		int num=sc.nextInt();
-		
-		int []height = new int [num];
-		
-		for(int i=0;i<num;i++) {
-			System.out.print("height["+i+"]:");
-			height[i]=sc.nextInt();
+
+		int a[]=new int [3];
+		for(int i=0;i<a.length;i++) {
+			a[i]=i;
+			System.out.println(a[i]);
 		}
-		System.out.println("최대값은 "+maxOf(height)+"입니다.");
+		int b[]=new int[3];
+		
+		copy(a,b);
+		
+		for(int i=0;i<a.length;i++) {
+			System.out.println(b[i]);
+		}
 		
 	}
 
