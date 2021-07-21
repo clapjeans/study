@@ -26,10 +26,6 @@ public class baekjoon5622 {
 				count+=9;
 			if(b[i].equals("W")||b[i].equals("X")||b[i].equals("Y")||b[i].equals("Z"))
 				count+=10;
-			
-			
-			
-			
 		}
 		System.out.println(count);
 		
