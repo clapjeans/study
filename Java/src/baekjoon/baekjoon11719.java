@@ -7,8 +7,7 @@ public class baekjoon11719 {
         Scanner scanner = new Scanner(System.in);
 
         while (scanner.hasNext()) {
-            String temp = scanner.nextLine();
-            System.out.println(temp);
+            System.out.println(scanner.nextLine());
         }
     }
 }
