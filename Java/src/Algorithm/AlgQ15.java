@@ -6,11 +6,13 @@ import java.util.Scanner;
 public class AlgQ15 {
 
 	static void triangle(int n) {
-		for (int i = 1; i < n; i++) {
+		for (int i = 1; i <= n; i++) {
+
 			for (int j = 1; j <= i; j++)
 				System.out.print("*");
+
+			System.out.println();
 		}
-		System.out.println();
 
 	}
 
@@ -21,6 +23,34 @@ public class AlgQ15 {
 			}
 			System.out.println();
 		}
+	}
+
+	static void triangleB(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (j <= n - i)
+					System.out.print(" ");
+				else {
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+
+		}
+	}
+
+	static void triangleC(int n) {
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (j < i)
+					System.out.print(" ");
+				else
+					System.out.print("*");
+			}
+			System.out.println();
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -40,11 +70,12 @@ public class AlgQ15 {
 		System.out.println("왼쪽 위가 직각인 삼각형");
 		triangleA(n); // 왼쪽 위가 직각인 이등변삼각형
 
-		/*
-		 * System.out.println("오른쪽 위가 직각인 삼각형"); triangleB(n); // 오른쪽 위가 직각인 이등변삼각형
-		 * 
-		 * System.out.println("오른쪽 아래가 직각인 삼각형"); triangleC(n); // 오른쪽 아래가 직각인 이등변삼각형
-		 */
+		System.out.println("오른쪽 아래가 직각인 삼각형");
+		triangleB(n); // 오른쪽 위가 직각인 이등변삼각형
+
+		System.out.println("오른쪽 위가 직각인 삼각형");
+		triangleC(n); // 오른쪽 아래가 직각인 이등변삼각형
+
 	}
 
 }
