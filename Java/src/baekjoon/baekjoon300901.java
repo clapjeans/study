@@ -1,4 +1,6 @@
-import java.util.*;
+package baekjoon;
+
+import java.util.Scanner;
 
 public class baekjoon300901 {
 	public static void main(String[] args) {
